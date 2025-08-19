@@ -1,0 +1,49 @@
+Tipo,Ambiente,Categoria,Nome,Quantidade,Versao/Restricao,Observacoes
+Hardware,Hardware,Microcontrolador,ESP32 DevKit V1,1,,Compativel com Arduino IDE; WiFi + BLE
+Hardware,Hardware,Sensor,Sensor PIR (HC-SR501 ou similar),2,,OUT em GPIO 4 (Entrada) e GPIO 5 (Saida); Alimentacao 3.3V
+Hardware,Hardware,Atuador,LED RGB,1,,Catodo comum; Pinos: 12 (R), 13 (G), 14 (B)
+Hardware,Hardware,Passivo,Resistor,3,,220 Ohm; Limitadores de corrente do LED RGB (R,G,B)
+Hardware,Hardware,Atuador,Buzzer,1,,GPIO 15; Ativo em 3.3V
+Hardware,Hardware,Display,OLED I2C 128x64,1,,Endereco 0x3C; SDA=21; SCL=22
+Hardware,Hardware,Acessorio,Protoboard,1,,Montagem
+Hardware,Hardware,Acessorio,Jumpers,1,,Conexoes
+Hardware,Hardware,Cabo,Cabo USB,1,,A-Micro/Type-C (conforme placa); Programacao/Alimentacao
+Software,Ferramentas,IDE,Arduino IDE,,>=1.8.x,Upload e monitor serial do ESP32
+Software,Ferramentas,Runtime,Node.js,,>=16.x,Execucao do backend
+Software,Ferramentas,Banco de Dados,MongoDB,,>=4.4,Persistencia
+Software,Ferramentas,Servico,MQTT Broker (Mosquitto),-,-,Mensageria MQTT
+Software,ESP32 (Arduino),Biblioteca,PubSubClient,-,-,Cliente MQTT
+Software,ESP32 (Arduino),Biblioteca,ArduinoJson,-,-,Serializacao JSON
+Software,ESP32 (Arduino),Biblioteca,Adafruit GFX,-,-,Suporte grafico
+Software,ESP32 (Arduino),Biblioteca,Adafruit SSD1306,-,-,Driver do display OLED
+Software,Backend,Dependencia,express,,^4.18.2,API HTTP
+Software,Backend,Dependencia,mqtt,,^5.3.5,Cliente MQTT
+Software,Backend,Dependencia,mongoose,,^8.0.3,ODM MongoDB
+Software,Backend,Dependencia,socket.io,,^4.7.4,Tempo real
+Software,Backend,Dependencia,cors,,^2.8.5,CORS
+Software,Backend,Dependencia,dotenv,,^16.3.1,Variaveis de ambiente
+Software,Backend,Dependencia,nodemailer,,^6.9.7,Envio de emails
+Software,Backend,Dependencia,moment,,^2.29.4,Datas/horas
+Software,Backend,Dependencia,helmet,,^7.1.0,Seguranca HTTP
+Software,Backend,Dependencia,express-rate-limit,,^7.1.5,Limite de requisicoes
+Software,Backend,Dependencia,compression,,^1.7.4,Compressao
+Software,Backend,Dependencia,morgan,,^1.10.0,Logs HTTP
+Software,Backend,DevDependency,nodemon,,^3.0.2,Reload em dev
+Software,Backend,DevDependency,jest,,^29.7.0,Testes
+Software,Dashboard,Dependencia,react,,^18.2.0,UI
+Software,Dashboard,Dependencia,react-dom,,^18.2.0,UI
+Software,Dashboard,Dependencia,react-scripts,,5.0.1,Build/dev
+Software,Dashboard,Dependencia,socket.io-client,,^4.7.4,Tempo real
+Software,Dashboard,Dependencia,axios,,^1.6.2,HTTP client
+Software,Dashboard,Dependencia,chart.js,,^4.4.0,Graficos
+Software,Dashboard,Dependencia,react-chartjs-2,,^5.2.0,Graficos (React)
+Software,Dashboard,Dependencia,react-router-dom,,^6.20.1,Roteamento
+Software,Dashboard,Dependencia,react-icons,,^4.12.0,Icones
+Software,Dashboard,Dependencia,moment,,^2.29.4,Datas/horas
+Software,Dashboard,Dependencia,react-hot-toast,,^2.4.1,Toasts
+Software,Dashboard,Dependencia,tailwindcss,,^3.3.6,CSS utilitario
+Software,Dashboard,Dependencia,autoprefixer,,^10.4.16,CSS
+Software,Dashboard,Dependencia,postcss,,^8.4.32,CSS
+Software,Dashboard,DevDependency,@testing-library/jest-dom,,^5.17.0,Testes
+Software,Dashboard,DevDependency,@testing-library/react,,^13.4.0,Testes
+Software,Dashboard,DevDependency,@testing-library/user-event,,^14.5.2,Testes
